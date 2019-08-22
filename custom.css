@@ -39,20 +39,38 @@ body {
   min-height:100%;
   position:relative;
 }
+@media (min-width: 768px){/*768 is the default value navbar changes at*/
+  /*@media allows separating the css between the views*/
+  #aboutText{
+    text-align: left;
+    font-size: 150%;
+    max-width: 50%;/*This changes how narrow the text is*/
+    line-height: 200%;
+  }
+  #icon {/*face image*/
+      max-width: 21%;
+      max-height: 21%;
+      display: block;
+      float: right;
+    }
+  }
+@media (max-width: 768px){
+  #aboutText{
+    text-align: center;
+    font-size: 150%;
+    max-width: 60%;/*This changes how narrow the text is*/
+    line-height: 100%;
+    margin: auto;
+  }
+  #icon {/*face image*/
+      max-width: 35%;
+      max-height: 35%;
+      display: block;
+      float: center;
+      margin: auto;
+    }
+  }
 
-#aboutText{
-  text-align: center;
-  font-size: 150%;
-  margin: auto;
-  max-width: 75%;/*This changes how narrow the text is*/
-}
-#icon {/*face image*/
-    max-width: 25%;
-    max-height: 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 #contactText{
   text-align: center;
   font-size: 150%;
