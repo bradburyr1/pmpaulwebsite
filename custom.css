@@ -39,13 +39,13 @@ body {
   min-height:100%;
   position:relative;
 }
-@media (min-width: 768px){/*768 is the default value navbar changes at*/
+@media (min-width: 1200px){/*Large devices*/
   /*@media allows separating the css between the views*/
   #aboutText{
     text-align: left;
     font-size: 150%;
     max-width: 50%;/*This changes how narrow the text is*/
-    line-height: 200%;
+    line-height: 1.6;
   }
   #icon {/*face image*/
       max-width: 21%;
@@ -54,12 +54,40 @@ body {
       float: right;
     }
   }
-@media (max-width: 768px){
+  @media (min-width: 992px) and (max-width: 1200px){/*Medium devices*/
+    #aboutText{
+      text-align: left;
+      font-size: 150%;
+      max-width: 50%;/*This changes how narrow the text is*/
+      line-height: 1.6;
+    }
+    #icon {/*face image*/
+        max-width: 30%;
+        max-height: 30%;
+        display: block;
+        float: right;
+      }
+    }
+  @media (min-width: 768px) and (max-width: 992px){/*Small devices*/
+    #aboutText{
+      text-align: left;
+      font-size: 150%;
+      max-width: 50%;/*This changes how narrow the text is*/
+      line-height: 1.6;
+    }
+    #icon {/*face image*/
+        max-width: 40%;
+        max-height: 40%;
+        display: block;
+        float: right;
+      }
+    }
+@media (max-width: 768px){/*Extra small devices*/
   #aboutText{
     text-align: center;
     font-size: 150%;
     max-width: 60%;/*This changes how narrow the text is*/
-    line-height: 100%;
+    line-height: 1.6;
     margin: auto;
   }
   #icon {/*face image*/
