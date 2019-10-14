@@ -88,7 +88,6 @@ body {
   #aboutText{
     text-align: center;
     font-size: 150%;
-    max-width: 60%;/*This changes how narrow the text is*/
     line-height: 1.6;
     margin: auto;
   }
